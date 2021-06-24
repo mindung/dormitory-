@@ -7,20 +7,22 @@ import java.util.Iterator;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
 
 public class RoomManage1 extends BaseFrame{
 
 	public RoomManage1() {
-		super("¹æÀåÁ¡È£ Ãþ Á¤ÇÏ±â", 400, 600);
+		super("¹æÀåÁ¡È£ Ãþ Á¤ÇÏ±â", 400, 500);
+		u_floor = 0;
 		
-		var b = new JButton("È¨À¸·Î");
-		var panel = new JPanel(new GridLayout(4, 1, 0, 5));
+		var panel = new JPanel(new GridLayout(4, 1, 0, 10));
+		panel.setBorder(new EmptyBorder(10, 10, 10, 10));
 		add(panel);
 		
 		var pnl = new JPanel();
-		pnl.add(createLabel("¹æÀå Á¡È£ Ãþ Á¤ÇÏ±â", JLabel.CENTER,"¸¼Àº °íµñ" ,Font.BOLD, 30), BorderLayout.NORTH);
-		pnl.add(b);
 		add(pnl, BorderLayout.NORTH);
+
+		pnl.add(createLabel("¹æÀå Á¡È£ Ãþ Á¤ÇÏ±â", JLabel.CENTER, "¸¼Àº °íµñ", Font.BOLD, 30), BorderLayout.NORTH);
 		
 		for (int i = 4; i >= 1; i--) {
 			int f = i;
@@ -31,8 +33,6 @@ public class RoomManage1 extends BaseFrame{
 				openFrame(new RoomManage2());
 			});
 		}
-		
-		b.addActionListener(e -> openFrame(new Main()));
 	}
 	
 	public static void main(String[] args) {

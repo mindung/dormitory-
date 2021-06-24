@@ -1,0 +1,21 @@
+no	id	pw	name	r_no
+1	rltnrtk1	rltnrtk1!	가나다	3
+2	rltnrtk2	rltnrtk2!	라마바	2
+3	rltnrtk3	rltnrtk3!	김가	5
+4	rltnrtk4	rltnrtk4!	김나	7
+5	rltnrtk5	rltnrtk5!	이나은	3
+6	rltnrtk6	rltnrtk6!	박상철	3
+7	rltnrtk7	rltnrtk7!	김유	7
+8	rltnrtk8	rltnrtk8!	박박	14
+9	rltnrtk9	rltnrtk9!	최유나	6
+10	rltnrtk10	rltnrtk10!	전병칠	5
+11	rltnrtk11	rltnrtk11!	김종국	45
+12	rltnrtk12	rltnrtk12!	김종대	14
+13	rltnrtk13	rltnrtk13!	이가은	6
+14	rltnrtk14	rltnrtk14!	박다은	5
+15	rltnrtk15	rltnrtk15!	인강	410
+16	rltnrtk16	rltnrtk16!	엄엄	6
+17	rltnrtk17	rltnrtk17!	잉	7
+18	rltnrtk18	rltnrtk18!	그건 좀	8
+19	rltnrtk19	rltnrtk19!	ㄹㅇ	5
+20	rltnrtk20	rltnrtk20!	시간 낭비	3

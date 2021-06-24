@@ -12,10 +12,9 @@ public class DbManager {
 	public static Connection con;
 		static {
 			try {
-				con = DriverManager.getConnection("jdbc:mysql://localhost/hospital?serverTimezone=UTC", "root", "1234");
-				
+				con = DriverManager.getConnection("jdbc:mysql://localhost/dormitory?serverTimezone=UTC", "root", "1234");
 			} catch (Exception e) {
-				
+				e.printStackTrace();
 			}
 		}
 		

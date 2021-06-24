@@ -1,5 +1,6 @@
 package frame;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
@@ -19,14 +20,10 @@ public class BaseFrame extends JFrame{
 
 	public static DbManager dbManager = new DbManager();
 	
-	public static String u_def = "";
+	public static String u_def = ""; // 
 			
-	public static Integer u_floor = 1;
-	
-	public static String d_name = "";
-	public static String selectedDate = "";
-	public static String selectedBed= "";
-	
+	public static int u_floor = 1;
+	public static int u_no = 1;
 	
 	protected DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
 	protected <T extends JComponent> T addC(T com, int w, int h ) {
@@ -34,6 +31,12 @@ public class BaseFrame extends JFrame{
 		return com;
 	}
 
+	protected <T extends JComponent> T createCom(T com) {
+		com.setBackground(Color.WHITE);
+		com.setOpaque(true);
+		return com;
+	}
+	
 	protected void openFrame(JFrame frame) {
 		dispose();
 		frame.setVisible(true);
@@ -53,6 +56,12 @@ public class BaseFrame extends JFrame{
 		setSize(w, h);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	}
+	
+
+	protected <T extends JComponent> T addC(T com, int x, int y, int w, int h) {
+		com.setBounds(x, y, w, h);
+		return com;
 	}
 	
 	protected JLabel createLabel(String text, int h, String font, int st, int s) {
